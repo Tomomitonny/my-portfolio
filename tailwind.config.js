@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        rotate: 'rotate 20s linear infinite',
+        rotate: 'rotate 30s linear infinite',
       },
       keyframes: {
         rotate: {

@@ -7,6 +7,7 @@ import About from './component/About'
 import Footer from './component/footer';
 import Cursor from './component/Cursor';
 import CircleText from './component/CircleText';
+import ItemRotate from './component/itemRotate';
 
 function App() {
   return (
@@ -15,9 +16,6 @@ function App() {
       <Hero/>
       <Works/>
       <About/>
-      <div className="inline-block flex right-0 bg-gray-100 overflow-hidden">
-        <CircleText />
-      </div>
       <Footer/>
       <Cursor/>
     </div>

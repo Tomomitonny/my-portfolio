@@ -10,9 +10,9 @@ const Header = () => {
       <a 
         className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
         <img 
-          className=""
+          className="w-14 h-14"
           alt=""
-          src="./img/logo.svg" />
+          src="./img/logo.png" />
         {/* <span className="ml-3 text-xl">
           This is Tomomi Sasaki's
           <br/>Portfolio Website.
