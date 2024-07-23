@@ -6,8 +6,8 @@ import Works from './component/works';
 import About from './component/About'
 import Footer from './component/footer';
 import Cursor from './component/Cursor';
-import CircleText from './component/CircleText';
-import ItemRotate from './component/itemRotate';
+import Skills from './component/Skills';
+
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
       <Header/>
       <Hero/>
       <Works/>
+      <Skills/>
       <About/>
       <Footer/>
       <Cursor/>

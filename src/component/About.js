@@ -6,7 +6,7 @@ const About = () => {
       
       <div className="container px-5 py-24 mx-auto flex flex-wrap">
         <div className="flex flex-wrap w-full">
-          <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+          <div className="lg:w-3/5 md:w-1/2 md:pr-10 md:py-6">
             <div className="flex relative pb-12">
               <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                 <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
@@ -19,7 +19,8 @@ const About = () => {
                 <p className="leading-relaxed">
                   青森県出身<br/>
                   大学卒業まで弘前市で過ごす。<br/>
-                  高校からストリートダンスをはじめ、インストラクターとして指導も行う。
+                  高校からストリートダンスをはじめ、<br/>
+                  インストラクターとして指導を行う。
                 </p>
               </div>
             </div>
@@ -50,7 +51,7 @@ const About = () => {
               </div>
               <div className="flex-grow pl-4">
                 <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"></h2>
-                <p className="leading-relaxed">友人の影響でWebサイト制作に興味を持つ。
+                <p className="leading-relaxed">友人の影響でWebサイト制作に興味を持つ。<br/>
                   もともと物作りが好きで、プログラミングにハマり始める。</p>
               </div>
             </div>
@@ -67,13 +68,16 @@ const About = () => {
                 <p className="leading-relaxed">
                   就職訓練でWebサイト制作に関して学ぶ。<br/>
                   WordPressについて学び、
-                  HTML、CSSなどその他の言語をより深く学びたいと思い、就職活動を実施し今に至る。
+                  HTML、CSSなど<br/>
+                  その他の言語をより深く学びたいと思い、<br/>
+                  学習を始める。
+                  就職活動を実施し今に至る。
                 </p>
               </div>
             </div>
             
           </div>
-          <img className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="https://dummyimage.com/1200x500" alt="step"/>
+          <img className="lg:w-2/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="https://dummyimage.com/1200x500" alt="step"/>
         </div>
       </div>
     </div>
