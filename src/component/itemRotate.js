@@ -1,8 +1,8 @@
 import React from "react";
 
-const ItemRotate = ({ src, className }) => {
+const ItemRotate = ({ src, className, style }) => {
   return (
-    <div className={`flex ${className} h-full`}>
+    <div className={`flex ${className}`} style={style}>
       <div className="w-fit h-fit object-scale-down bg-no-repeat transform animate-rotate">
         <img
           src={src}
@@ -10,7 +10,6 @@ const ItemRotate = ({ src, className }) => {
         />
       </div>
     </div>
-    
   );
 };
 

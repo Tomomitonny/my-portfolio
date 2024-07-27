@@ -1,73 +1,56 @@
 import React from "react";
 import '../index.css';
-import ItemRotate from "./itemRotate";
+import Background from "./Background";
 
-const Works = () => {
+const Works = ({ worksData }) => {
+  if (!Array.isArray(worksData)) {
+    return <p>Invalid data</p>;
+  }
+
+  const images = ["./img/Union.png", "./img/bg-item-sm.png", "./img/bg-item-lg.png"];
+
   return (
-    <section className="text-gray-600 body-font">
-      <ItemRotate 
-        src={"./img/Union.png"}
-        className="justify-end items-center"
+    <div id="works" className="text-gray-600 body-font relative z-50">
+      <Background
+        images={images} 
+        numItems={6} 
+        containerClassName={"h-full"}
+        className={""} 
       />
-      <ItemRotate 
-        src={"./img/Union.png"}
-        className="justify-start items-center"
-      />
-      <ItemRotate 
-        src={"./img/bg-item-sm.png"}
-        className="justify-end items-center"
-      />
-      <ItemRotate 
-        src={"./img/bg-item-lg.png"}
-        className="justify-start items-center"
-      />
-      <div className="container px-5 py-24 mx-auto">
-        <div className="flex flex-wrap w-full mb-20">
-
-      {/* <div className="w-full h-full bg-cover bg-center bg-no-repeat transform item-rotate" style={{ backgroundImage: "url('./img/heroImage1.png')" }}></div> */}
-
-          <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Pitchfork Kickstarter Taxidermy</h1>
-            <div className="h-1 w-20 bg-purple-300 rounded"></div>
-          </div>
-          <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+      <h2 className="relative z-10 flex justify-center pt-36 mb-8">
+        <div className="en absolute z-0 -bottom-6 right-0 text-8xl font-bold w-auto h-32 text-[#fffff9] tracking-wider text-shadow">
+          Works
         </div>
-        <div className="flex flex-wrap -m-4">
-          <div className="xl:w-1/4 md:w-1/2 p-4">
-            <div className="bg-gray-100 p-6 rounded-lg">
-              <img className="h-40 rounded w-full object-cover object-center mb-6" src="./img/works2_kodomoen.png" alt="content" />
-              <h3 className="tracking-widest text-purple-300 text-xs font-medium title-font">SUBTITLE</h3>
-              <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Chichen Itza</h2>
-              <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-            </div>
-          </div>
-          <div className="xl:w-1/4 md:w-1/2 p-4">
-            <div className="bg-gray-100 p-6 rounded-lg">
-              <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/721x401" alt="content" />
-              <h3 className="tracking-widest text-purple-300 text-xs font-medium title-font">SUBTITLE</h3>
-              <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Colosseum Roma</h2>
-              <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-            </div>
-          </div>
-          <div className="xl:w-1/4 md:w-1/2 p-4">
-            <div className="bg-gray-100 p-6 rounded-lg">
-              <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/722x402" alt="content" />
-              <h3 className="tracking-widest text-purple-300 text-xs font-medium title-font">SUBTITLE</h3>
-              <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Great Pyramid of Giza</h2>
-              <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-            </div>
-          </div>
-          <div className="xl:w-1/4 md:w-1/2 p-4">
-            <div className="bg-gray-100 p-6 rounded-lg">
-              <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403" alt="content" />
-              <h3 className="tracking-widest text-purple-300 text-xs font-medium title-font">SUBTITLE</h3>
-              <h2 className="text-lg text-gray-900 font-medium title-font mb-4">San Francisco</h2>
-              <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-            </div>
-          </div>
+        <div className="bitter-font relative text-3xl font-midium w-auto h-8">
+          A Selection Of Stuff I've Built
         </div>
+      </h2>
+
+      <div className="works container px-5 py-4 mx-auto xl:max-w-6xl md:max-w-4xl">
+        <ul className="works_ul list-none flex flex-wrap">
+          {worksData.map((work, index) => (
+            <li key={index} className="works_li relative xl:w-1/3 md:w-1/2 p-6">
+              <a href={work.link} target="_blank" rel="noopener noreferrer" className="block border border-gray-100 relative overflow-hidden no-underline group">
+                <div className="works_img relative z-10">
+                  <img
+                    src={work.imgSrc}
+                    alt={work.alt}
+                    className="h-60 w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-black opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-50"></div>
+                </div>
+                <div className="bg-white text-gray-700 w-full text-left pl-3 relative z-20">
+                  <h3 className="text-lg font-bold py-2">
+                    {work.title}
+                  </h3>
+                  <p className="">{work.description}</p>
+                </div>
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
-    </section>
+    </div>
   );
 }
 

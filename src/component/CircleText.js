@@ -2,7 +2,7 @@ import React from 'react';
 // import '../App';
 
 const CircleText = () => {
-  const text = "Thank you so much for seeing my portfolio!! ";
+  const text = "Thank you for seeing my portfolio!!  ";
   const characters = text.split("");
 
   return (
@@ -19,7 +19,7 @@ const CircleText = () => {
           key={index}
           className="absolute text-sm text-gray-800"
           style={{
-            transform: `rotate(${(index / characters.length) * 360}deg) translate(50px)`,
+            transform: `rotate(${(index / characters.length) * 360}deg) translate(60px)`,
             transformOrigin: '0 0',
             writingMode: 'vertical-rl',
           }}

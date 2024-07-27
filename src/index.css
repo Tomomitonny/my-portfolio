@@ -11,9 +11,18 @@
   }
 }
 
-/* .item-rotate {
-  animation: rotate 60s infinite linear;
-} */
+.loader {
+  border-top-color: #3498db;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
 
 
 body {
@@ -35,7 +44,6 @@ code {
   background: #fffff9;
 }
 
-
 #cursor {
   position: absolute;
   width: 20px;
@@ -52,3 +60,62 @@ code {
   transform: scale(2);
   background-color: rgba(0, 0, 0, 0.8);
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap');
+.bitter-font {
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  /* font-weight: 900; */
+  font-style: normal;
+}
+
+
+@layer components {
+  .works_li:hover .works_img img {
+    @apply transform scale-110;
+  }
+  .works_li:hover .works_img > div {
+    @apply opacity-50;
+  }
+}
+
+
+@layer components {
+  .text-shadow {
+    text-shadow:
+      1px 1px 0px #e0e0e0,
+     -1px 1px 0px #e0e0e0,
+      1px -1px 0px #e0e0e0,
+     -1px -1px 0px #e0e0e0,
+      1px 0px 0px #e0e0e0,
+      0px 1px 0px #e0e0e0,
+     -1px 0px 0px #e0e0e0,
+      0px -1px 0px #e0e0e0;
+  }
+}
+
+
+.copyright {
+  position: fixed;
+  font-size: 1rem;
+  transform-origin: bottom left;
+  transform: rotate(-90deg);
+  bottom: 32px;
+  left: 55px;
+  text-align: left;
+}
+
+#contact h2 {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.8);
+  letter-spacing : 2px;
+  text-shadow: 
+  1px 1px 0 #fffff9, 2px 2px 0 rgba(0, 0, 0, 0.8);
+}
+
+
