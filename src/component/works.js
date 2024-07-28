@@ -7,7 +7,7 @@ const Works = ({ worksData }) => {
     return <p>Invalid data</p>;
   }
 
-  const images = ["./img/Union.png", "./img/bg-item-sm.png", "./img/bg-item-lg.png"];
+  const images = ["./img/bg-item.png", "./img/bg-item-sm.png", "./img/bg-item-lg.png"];
 
   return (
     <div id="works" className="text-gray-600 body-font relative z-50">
@@ -30,7 +30,7 @@ const Works = ({ worksData }) => {
         <ul className="works_ul list-none flex flex-wrap">
           {worksData.map((work, index) => (
             <li key={index} className="works_li relative xl:w-1/3 md:w-1/2 p-6">
-              <a href={work.link} target="_blank" rel="noopener noreferrer" className="block border border-gray-100 relative overflow-hidden no-underline group">
+              <a href={work.link} target="_blank" rel="noopener noreferrer" className="block border border-gray-100 relative overflow-hidden no-underline group shadow-md">
                 <div className="works_img relative z-10">
                   <img
                     src={work.imgSrc}
@@ -43,7 +43,9 @@ const Works = ({ worksData }) => {
                   <h3 className="text-lg font-bold py-2">
                     {work.title}
                   </h3>
-                  <p className="">{work.description}</p>
+                  <p className="">
+                    {work.description}
+                  </p>
                 </div>
               </a>
             </li>

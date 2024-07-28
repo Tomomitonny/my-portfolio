@@ -15,7 +15,7 @@ const TypingAnimation = ({ text, speed = 150 }) => {
       timeout = setTimeout(() => {
         setDisplayText('');
         setIndex(0);
-      }, 2000); 
+      }, 3000); 
     }
     return () => clearTimeout(timeout);
   }, [index, text, speed]);

@@ -3,7 +3,7 @@ import Background from "./Background";
 
 const Skills = () => {
 
-  const images = ["./img/Union.png", "./img/bg-item-sm.png", "./img/bg-item-lg.png"];
+  const images = ["./img/bg-item.png", "./img/bg-item-sm.png", "./img/bg-item-lg.png"];
 
   return (
     <div className="text-gray-600 body-font mb-18 sm:mb-40">

@@ -3,7 +3,7 @@ import TypingAnimation from "./TypingAnimation";
 
 const Hero = () => {
   return (
-    <div className="relative text-gray-600 body-font max-w-3xl mx-auto">
+    <div className="relative text-gray-600 body-font max-w-3xl mx-auto z-30">
       <div className="absolute inset-0">
         <img
           className="hidden md:block w-full h-full object-scale-down opacity-30 object-left pr-32"
