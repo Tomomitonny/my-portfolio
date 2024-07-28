@@ -5,7 +5,7 @@ const Loading = () => {
   return (
     <div className="flex justify-center items-center h-screen">
       <img
-        src="/img/loding.png"
+        src="./img/loding.png"
         className="animate-ping h-8 w-8 rounded-xl"
         />
       {/* <img
