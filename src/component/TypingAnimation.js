@@ -5,13 +5,19 @@ const TypingAnimation = ({ text, speed = 150 }) => {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
+    let timeout;
     if (index < text.length) {
-      const timeout = setTimeout(() => {
+      timeout = setTimeout(() => {
         setDisplayText(prev => prev + text[index]);
         setIndex(prev => prev + 1);
       }, speed);
-      return () => clearTimeout(timeout);
+    } else {
+      timeout = setTimeout(() => {
+        setDisplayText('');
+        setIndex(0);
+      }, 2000); 
     }
+    return () => clearTimeout(timeout);
   }, [index, text, speed]);
 
   return <span>{displayText}</span>;

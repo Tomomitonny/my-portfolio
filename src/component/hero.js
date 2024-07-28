@@ -19,7 +19,8 @@ const Hero = () => {
             <br/> 
           </h1>
           <p className="text-xl mb-8 whitespace-nowrap ">
-          <TypingAnimation text="I'm a growing web developer." />
+            　
+            <TypingAnimation text="I'm a growing web developer." />
 
           </p>
         </div>

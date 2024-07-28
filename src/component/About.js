@@ -21,18 +21,18 @@ const About = () => {
         </div>
       </h2>
       
-      <div className="container px-5 py-4 mx-auto xl:max-w-6xl md:max-w-4xl flex flex-wrap ">
+      <div className="container px-5 py-4 mx-auto xl:max-w-5xl md:max-w-4xl flex flex-wrap ">
         <div className="flex flex-wrap w-full z-30">
           <div className="lg:w-3/5 md:w-1/2 md:pl-20 md:pr-10 md:py-6">
             <div className="flex relative pb-12 ">
               <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
-                <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                {/* <div className="h-full w-1 bg-gray-200 pointer-events-none"></div> */}
               </div>
               <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#B5A4EE] inline-flex items-center justify-center text-white relative z-10">
                 <img src="./img/Vector 6.svg"/>
               </div>
-              <div className="flex-grow">
-                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"></h2>
+              <div className="flex-grow text-left ml-4">
+                <h2 className="font-thin title-font text-lg mb-1 tracking-wider">生い立ち</h2>
                 <p className="leading-relaxed">
                   青森県出身<br/>
                   大学卒業まで弘前市で過ごす。<br/>
@@ -43,16 +43,16 @@ const About = () => {
             </div>
             <div className="flex relative pb-12">
               <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
-                <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                {/* <div className="h-full w-1 bg-gray-200 pointer-events-none"></div> */}
               </div>
               <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#B5A4EE] inline-flex items-center justify-center text-white relative z-10">
                 <img src="./img/Vector 7.svg"/>
 
               </div>
-              <div className="flex-grow">
-                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">就職</h2>
+              <div className="flex-grow text-left ml-4">
+                <h2 className="font-medium title-font text-lg mb-1 tracking-wider">就職</h2>
                 <p className="leading-relaxed">
-                  就職を機に上京。<br/>
+                  就職を機に上京。
                   看護師として働く。<br/>
                   小児専門病院や訪問看護ステーションなどに勤務。
                 </p>
@@ -60,16 +60,20 @@ const About = () => {
             </div>
             <div className="flex relative pb-12">
               <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
-                <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                {/* <div className="h-full w-1 bg-gray-200 pointer-events-none"></div> */}
               </div>
               <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#B5A4EE] inline-flex items-center justify-center text-white relative z-10">
                 <img src="./img/Group 8709.svg"/>
 
               </div>
-              <div className="flex-grow">
-                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"></h2>
-                <p className="leading-relaxed">友人の影響でWebサイト制作に興味を持つ。<br/>
-                  もともと物作りが好きで、プログラミングにハマり始める。</p>
+              <div className="flex-grow text-left ml-4">
+                <h2 className="font-thin title-font text-lg mb-1 tracking-wider">趣味</h2>
+                <p className="leading-relaxed">
+                  編み物、ビーズ、パン作りなど物作りが好きで、<br/>
+                  ハンドメイド商品の販売。物作り通じて知り合った<br/>
+                  友人の影響でWebサイト制作に興味を持つ。<br/>
+
+                </p>
               </div>
             </div>
             
@@ -77,41 +81,40 @@ const About = () => {
             
             <div className="flex relative pb-12">
               <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
-                <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                {/* <div className="h-full w-1 bg-gray-200 pointer-events-none"></div> */}
               </div>
               <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#B5A4EE] inline-flex items-center justify-center text-white relative z-10">
                 <img src="./img/Group 8780.svg"/>
 
               </div>
-              <div className="flex-grow">
-                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">転職活動</h2>
+              <div className="flex-grow text-left ml-4">
+                <h2 className="font-thin title-font text-lg mb-1 tracking-wider">転職活動</h2>
                 <p className="leading-relaxed">
-                  就職訓練でWebサイト制作に関して学ぶ。<br/>
-                  WordPressについて学び、
-                  HTML、CSSなど<br/>
+                  職業訓練でWebサイト制作に関して学ぶ。<br/>
+                  WordPressでのについて学び、HTML、CSSなど<br/>
                   その他の言語をより深く学びたいと思い、<br/>
-                  学習を始める。
-                  就職活動を実施し今に至る。
+                  自己学習を始める。
                 </p>
               </div>
             </div>
             <div className="flex relative pb-12">
               <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
-                <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                {/* <div className="h-full w-1 bg-gray-200 pointer-events-none"></div> */}
               </div>
               <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#B5A4EE] inline-flex items-center justify-center text-white relative z-10">
                 <img src="./img/icon_code.svg"/>
 
               </div>
-              <div className="flex-grow">
-                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider"></h2>
-                <p className="leading-relaxed">現在<br/>
-                  学習を続けています。</p>
+              <div className="flex-grow text-left ml-4">
+                <h2 className="font-thin title-font text-lg mb-1 tracking-wider">現在</h2>
+                <p className="leading-relaxed">
+                  幅広い視点で、目的に合ったデザインを叶えられる<br/>
+                  ウェブ開発者になれるよう学習を続けています。</p>
               </div>
             </div>
             
           </div>
-          <img className="lg:w-2/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="https://dummyimage.com/1200x500" alt="step"/>
+          <img className="lg:w-2/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="./img/about_img1.png" alt="about image"/>
         </div>
       </div>
     </div>

@@ -28,7 +28,7 @@ const Footer = () => {
         
       </div>
 
-      <p className="copyright mb-2 ">
+      <p className="copyright">
             &copy; 
             {year} SASAKI TOMOMI
           </p>

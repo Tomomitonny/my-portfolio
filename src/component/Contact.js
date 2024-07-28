@@ -4,7 +4,7 @@ import "../index.css"
 
 const Contact = () => {
   return (
-    <div id="contact" className="pt-40 pb-auto min-h-[calc(100vh-340px)] max-w-5xl mx-auto">
+    <div id="contact" className="pt-40 pb-auto min-h-[calc(100vh-340px)] max-w-5xl mx-auto z-50">
       <div className="max-w-screen-lg mx-auto mb-10 text-sm mx-10">
         <h2 className="inline sm:block sm:justify-center">Contact</h2>
 
