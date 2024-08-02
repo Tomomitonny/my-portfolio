@@ -13,12 +13,12 @@
 <ellipse cx="22.1816" cy="17.5347" rx="1.5" ry="0.6" transform="rotate(-55.4016 22.1816 17.5347)" fill="white"/>
 <ellipse cx="22.1816" cy="17.5347" rx="1.5" ry="0.6" transform="rotate(-55.4016 22.1816 17.5347)" fill="white"/>
 <ellipse cx="22.1816" cy="17.5347" rx="1.5" ry="0.6" transform="rotate(-55.4016 22.1816 17.5347)" fill="white"/>
-<line x1="21.7694" y1="17.2507" x2="18.1475" y2="14.7523" stroke="white" stroke-linecap="round"/>
-<path d="M1.11747 2.69762L5.60938 5.86267" stroke="white" stroke-linecap="round"/>
+<line x1="21.7694" y1="17.2507" x2="18.1475" y2="14.7523" stroke="white" strokeLinecap="round"/>
+<path d="M1.11747 2.69762L5.60938 5.86267" stroke="white" strokeLinecap="round"/>
 <ellipse cx="17.7019" cy="21.0465" rx="1.5" ry="0.6" transform="rotate(-30.6341 17.7019 21.0465)" fill="white"/>
 <ellipse cx="17.7019" cy="21.0465" rx="1.5" ry="0.6" transform="rotate(-30.6341 17.7019 21.0465)" fill="white"/>
 <ellipse cx="17.7019" cy="21.0465" rx="1.5" ry="0.6" transform="rotate(-30.6341 17.7019 21.0465)" fill="white"/>
 <ellipse cx="17.7019" cy="21.0465" rx="1.5" ry="0.6" transform="rotate(-30.6341 17.7019 21.0465)" fill="white"/>
-<line x1="17.4478" y1="20.6159" x2="15.2058" y2="16.83" stroke="white" stroke-linecap="round"/>
-<path d="M5.81549 0.682928L7.68359 3.88196" stroke="white" stroke-linecap="round"/>
+<line x1="17.4478" y1="20.6159" x2="15.2058" y2="16.83" stroke="white" strokeLinecap="round"/>
+<path d="M5.81549 0.682928L7.68359 3.88196" stroke="white" strokeLinecap="round"/>
 </svg>
