@@ -11,5 +11,13 @@
       dur="6s"
       repeatCount="indefinite"
     />
+    <animateTransform 
+      attributeName="transform" 
+      attributeType="XML" 
+      type="rotate" 
+      from="0 172 189" 
+      to="360 172 189" 
+      dur="6s" 
+      repeatCount="indefinite"/>
   </path>
 </svg>
